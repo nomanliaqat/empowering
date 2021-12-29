@@ -1,9 +1,9 @@
 import React from "react";
 
 function Posts(props) {
-  const { post_img, brand_img, profile_img, name, title, desc, key } = props;
+  const { post_img, brand_img, profile_img, name, title, desc, index } = props;
   return (
-    <React.Fragment key={key}>
+    <React.Fragment key={index}>
       <div className="col-sm-12 col-md-6 col-lg-6 mb-5">
         <a href="javascript:void(0)">
           <img src={post_img} alt="main-pic" className="post_main_img" />

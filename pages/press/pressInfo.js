@@ -108,7 +108,7 @@ function PressInfo(props) {
             brand_img={_a.brand_img}
             title={_a.title}
             desc={_a.desc}
-            key={i}
+            index={i}
           />
         ))}
       </div>
