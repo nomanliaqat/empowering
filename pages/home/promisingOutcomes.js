@@ -47,6 +47,7 @@ const PromisingOutcomes = () => {
                 <a
                   href="https://empoweringconfidentyouth.com/wp-content/uploads/2021/04/ECY-Spring-2021-Pilot-Outcome-Results.pdf"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button className="read-more-btn">Read More &gt;&gt;</button>
                 </a>

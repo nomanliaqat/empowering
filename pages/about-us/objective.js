@@ -3,7 +3,7 @@ import { faBook } from "@fortawesome/free-solid-svg-icons";
 
 export default function Objective() {
   return (
-    <div class="objective align-items-center justify-content-center">
+    <div className="objective align-items-center justify-content-center">
       <HeaderSection
         title="OUR OBJECTIVE:"
         desc="TURNING DREAMS INTO ACTION"

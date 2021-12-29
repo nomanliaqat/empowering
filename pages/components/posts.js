@@ -1,9 +1,9 @@
 import React from "react";
 
 function Posts(props) {
-  const { post_img, brand_img, profile_img, name, title, desc } = props;
+  const { post_img, brand_img, profile_img, name, title, desc, key } = props;
   return (
-    <>
+    <div key={key}>
       <div className="col-sm-12 col-md-6 col-lg-6 mb-5">
         <a href="javascript:void(0)">
           <img src={post_img} alt="main-pic" className="post_main_img" />
@@ -30,7 +30,7 @@ function Posts(props) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

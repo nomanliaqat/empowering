@@ -99,7 +99,7 @@ function PressInfo(props) {
     <div className="mt-120">
       <h1 className="press_title">Our Press</h1>
       <div className="row brand-content">
-        {authors.map((_a) => (
+        {authors.map((_a, i) => (
           <Posts
             name={_a.name}
             link={_a.link}
@@ -108,6 +108,7 @@ function PressInfo(props) {
             brand_img={_a.brand_img}
             title={_a.title}
             desc={_a.desc}
+            key={i}
           />
         ))}
       </div>

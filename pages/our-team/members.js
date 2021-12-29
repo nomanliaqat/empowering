@@ -43,7 +43,10 @@ function Profile() {
   return (
     <div className="row profile-main">
       {members.map((_m, i) => (
-        <div className="col-sm-12 col-md-4 col-lg-4 profile-column mt-3">
+        <div
+          className="col-sm-12 col-md-4 col-lg-4 profile-column mt-3"
+          key={i}
+        >
           <div className="text-center">
             <img
               src={_m.image}

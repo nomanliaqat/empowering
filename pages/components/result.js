@@ -11,7 +11,7 @@ const Result = () => {
         </a>
       </div>
       <div className="col-12 program-demonstrated">
-        <div class="et_pb_text_inner">
+        <div className="et_pb_text_inner">
           <h3>Students who completed our program demonstrated: </h3>
         </div>
         <div className="program-inner-text">

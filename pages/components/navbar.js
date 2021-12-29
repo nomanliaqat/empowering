@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import { faEdit, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -30,14 +31,14 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav main-bar">
             <li className="nav-item">
-              <a href="/about-us" className="nav-link">
-                About Us
-              </a>
+              <Link href="/about-us">
+                <a className="nav-link">About Us</a>
+              </Link>
             </li>
 
             <li
@@ -62,35 +63,30 @@ const Navbar = () => {
                 aria-labelledby="navbarDropdown"
               >
                 <li>
-                  <a
-                    href="/elementary-school-sel-curriculum"
-                    className="dropdown-item"
-                  >
-                    Elementary School SEL Curriculum
-                  </a>
+                  <Link href="/elementary-school-sel-curriculum">
+                    <a className="dropdown-item">
+                      Elementary School SEL Curriculum
+                    </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/middle-school-sel-curriculum"
-                    className="dropdown-item"
-                  >
-                    Middle School SEL Curriculum
-                  </a>
+                  <Link href="/middle-school-sel-curriculum">
+                    <a className="dropdown-item">
+                      Middle School SEL Curriculum
+                    </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/high-school-sel-curriculum"
-                    className="dropdown-item"
-                  >
-                    High School SEL Curriculum
-                  </a>
+                  <Link href="/high-school-sel-curriculum">
+                    <a className="dropdown-item">High School SEL Curriculum</a>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/our-team">
-                Our Team
-              </a>
+              <Link href="/our-team">
+                <a className="nav-link">Our Team</a>
+              </Link>
             </li>
 
             <li
@@ -98,16 +94,17 @@ const Navbar = () => {
               onMouseEnter={() => setMediaDropDown(true)}
               onMouseLeave={() => setMediaDropDown(false)}
             >
-              <a
-                className="nav-link dropdown-toggle"
-                href="/our-team"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Media
-              </a>
+              <Link href="/our-team">
+                <a
+                  className="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Media
+                </a>
+              </Link>
               <ul
                 className={`dropdown-menu dropdown-menu ${
                   mediaDropDown && "show"
@@ -116,25 +113,24 @@ const Navbar = () => {
                 aria-labelledby="navbarDropdown"
               >
                 <li>
-                  <a href="/press" className="dropdown-item">
-                    Press
-                  </a>
+                  <Link href="/press">
+                    <a className="dropdown-item">Press</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/blogs" className="dropdown-item">
-                    Blogs
-                  </a>
+                  <Link href="/blogs">
+                    <a className="dropdown-item">Blogs</a>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <a
-                href="https://learning.empoweringconfidentyouth.com/login/"
-                className="nav-link"
-              >
-                <FontAwesomeIcon icon={faUser} />
-                <span style={{ marginLeft: 4 }}>Login</span>
-              </a>
+              <Link href="https://learning.empoweringconfidentyouth.com/login/">
+                <a className="nav-link">
+                  <FontAwesomeIcon icon={faUser} />
+                  <span style={{ marginLeft: 4 }}>Login</span>
+                </a>
+              </Link>
             </li>
             <li className="ps-4">
               <button type="button" className="request_btn nav-btn">

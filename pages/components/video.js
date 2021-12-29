@@ -2,7 +2,7 @@ const Video = () => {
   return (
     <div className="row youtube-video video-main">
       <div className="col-sm-12 col-md-6 offset-md-3 offset-lg-3">
-        <div class="embed-responsive embed-responsive-4by3 w-100">
+        <div className="embed-responsive embed-responsive-4by3 w-100">
           <iframe
             className="embed-responsive-item"
             width="100%"
